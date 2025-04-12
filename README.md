@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# Coffee Delivery - Ignite Rocketseat Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+☕ E-commerce App: an app to manage a shopping cart for a fictional coffee shop.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Overview
 
-- Configure the top-level `parserOptions` property like this:
+### The Challenge
+This challenge was part of the Ignite React track by Rocketseat. The goal was to develop a complete shopping cart experience, from product listing to checkout, using modern React tools and best practices.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Features
+Users should be able to:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- View a list of coffee products available for purchase
+- Add or remove items from the shopping cart
+- Fill out a form with delivery address information
+- See the total number of items in the cart in the header
+- View the total price, including delivery fee
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Screenshot
+
+## My process
+
+### Built with
+
+- [React](https://reactjs.org/) - JS library
+- [Typescript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Styled component](https://styled-components.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev/)
+- [Phosphor Icons](https://phosphoricons.com/)
+
+### What I learned
+
+- Used useReducer to manage cart actions like adding, removing, and clearing items;
+- Implemented responsive design using media queries with Styled Components;
+- Learned how to structure a scalable React app by following best practices, including the use of useReducer to manage complex cart state.
+  
+### Useful resources
+
+- [Responsividade na Prática | Masterclass #08](https://www.youtube.com/watch?v=H91DhKPjhPk) - This helped me for to create responsive design.
+- [Rocketseat](https://www.rocketseat.com.br/) To React classes
+
